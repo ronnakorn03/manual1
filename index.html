@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>คู่มือห้องพยาบาลโรงเรียน</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <div class="logo">ER</div>
+      <h1>คู่มือห้องพยาบาลโรงเรียน</h1>
+    </div>
+    <div class="search">
+      <span>🔎</span>
+      <input id="q" placeholder="ค้นหาเช่น แผลไหม้, น้ำเกลือ…" />
+    </div>
+    <nav class="btnrow">
+      <a class="btn" href="#/">หน้าหลัก</a>
+      <a class="btn" href="#/care">การทำแผล</a>
+      <a class="btn" href="#/gear">อุปกรณ์</a>
+      <a class="btn" href="#/room">วิธีใช้ห้องพยาบาล</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+<footer><div class="wrap mini">* ใช้เพื่อการเรียนรู้เท่านั้น</div></footer>
+
+<!-- โหลดข้อมูลแยกไฟล์ -->
+<script src="care.js"></script>
+<script src="gear.js"></script>
+<script src="room.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
