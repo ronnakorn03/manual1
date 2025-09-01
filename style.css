@@ -217,3 +217,143 @@ footer {
 
 /* tag ให้ขึ้นบรรทัดใหม่ได้ ไม่เบียดหัวข้อ */
 .tags { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 10px; }
+/* ====== media card (มีรูป/อีโมจิ) ====== */
+.pill-card.media{
+  display:flex; align-items:center; gap:12px;
+  padding:12px 14px;
+}
+.thumb-wrap{
+  width:56px; height:56px; flex:0 0 56px;
+  border-radius:12px; overflow:hidden;
+  background:var(--chip); border:1px solid var(--border);
+  display:grid; place-items:center;
+}
+.thumb-wrap img{ width:100%; height:100%; object-fit:cover; display:block; }
+.icon-badge{ display:none; width:100%; height:100%;
+  align-items:center; justify-content:center; font-size:26px; }
+.meta .title{ font-weight:700; }
+.meta .tags{ margin-top:4px; }
+
+.hero-thumb{
+  width:100%; max-width:420px; height:220px;
+  border-radius:16px; overflow:hidden;
+  background:var(--chip); border:1px solid var(--border);
+  display:grid; place-items:center; margin:8px 0 14px;
+}
+.hero-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.icon-badge.lg{ display:none; font-size:48px; align-items:center; justify-content:center; }
+.pill-card.media{
+  display:flex; align-items:center; gap:12px; padding:12px 14px;
+}
+.thumb-wrap{
+  width:56px; height:56px; flex:0 0 56px; border-radius:12px; overflow:hidden;
+  background:var(--chip); border:1px solid var(--border);
+  display:grid; place-items:center;
+}
+.thumb-wrap img{ width:100%; height:100%; object-fit:cover; display:block; }
+.icon-badge{ display:none; width:100%; height:100%; align-items:center; justify-content:center; font-size:26px; }
+
+.meta .title{ font-weight:700; }
+.meta .tags{ margin-top:4px; }
+
+.hero-thumb{
+  width:100%; max-width:420px; height:220px;
+  border-radius:16px; overflow:hidden;
+  background:var(--chip); border:1px solid var(--border);
+  display:grid; place-items:center; margin:8px 0 14px;
+}
+.hero-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.icon-badge.lg{ display:none; font-size:48px; align-items:center; justify-content:center; }
+/* การ์ดแบบมีมีเดีย (รูป/อิโมจิ + เนื้อหา) */
+.pill-card.media{
+  display:flex; align-items:center; gap:12px; padding:12px 14px;
+}
+.meta .title{ font-weight:700; }
+.meta .tags{ margin-top:4px; }
+
+/* วงกลมสำหรับอิโมจิ */
+.icon-circle{
+  width:56px; height:56px; flex:0 0 56px;
+  border-radius:12px; display:grid; place-items:center;
+  background:var(--chip); border:1px solid var(--border);
+  font-size:26px;
+}
+.icon-circle.lg{
+  width:96px; height:96px; font-size:48px; border-radius:18px;
+}
+
+/* ตำแหน่งไอคอนใหญ่หน้า detail */
+.hero-icon{ margin:8px 0 14px; }
+/* ===== CARE emoji bubble ===== */
+.icon-circle{
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--chip, #f1f5f9);
+  border: 1px solid var(--border, #e2e8f0);
+  font-size: 22px;
+  line-height: 1;
+  user-select: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+}
+
+.pill-card.media .icon-circle{ margin-right: 12px; }
+
+.icon-circle.lg{
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+  font-size: 44px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.hero-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 18px;
+}
+/* ===== Emoji bubble สำหรับ CARE ===== */
+.icon-circle{
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--chip, #f1f5f9);
+  border: 1px solid var(--border, #e2e8f0);
+  font-size: 22px;
+  line-height: 1;
+  user-select: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.pill-card.media .icon-circle{ margin-right: 12px; }
+.icon-circle.lg{
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+  font-size: 44px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+.hero-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 18px;
+}
+
+/* เผื่อยังไม่มี layout การ์ดแบบ media */
+.pill-card.media{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+}
+.meta .title{ font-weight: 700; }
+.meta .tags{ margin-top: 4px; }
